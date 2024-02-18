@@ -7,7 +7,7 @@ const bcrypt = require('bcryptjs')
 const URI = "mongodb+srv://admin:admin@blog-website.utuektf.mongodb.net/?retryWrites=true&w=majority"
 const postModel = require('./models/Post.js')
 const userAuthModel = require('./models/User.js')
-
+const cors = require('cors')
 
 
 
@@ -16,6 +16,9 @@ const userAuthModel = require('./models/User.js')
 app.set("view engine", "ejs");
 app.use(express.urlencoded({extended : true}))
 
+
+//enabling cors
+app.use(cors());
 
 
 //mongodb connection setup
@@ -36,15 +39,6 @@ func().then(() => {
 
 //ROUTES : 
 
-//home
-app.get('/home', (req, res) => {
-    res.render('home.ejs')
-})
-
-//register
-app.get('/', (req,res) => {
-    res.render('register.ejs');
-});
 
 app.post('/',async (req, res) => {
     const {name, email, password} = req.body;
@@ -67,9 +61,7 @@ app.post('/',async (req, res) => {
 
 
 //login
-app.get('/login', (req, res) => {
-    res.render('login');
-})
+
 app.post('/login', async (req, res) => {
     const {email, password} = req.body;
     const user = await userAuthModel.findOne({email})
@@ -85,9 +77,6 @@ app.post('/login', async (req, res) => {
 
 
 //community
-app.get('/community', (req, res) => {
-    res.render('community.ejs');
-})
 
 app.post('/community', async (req, res) => {
     const {name, content} = req.body;
