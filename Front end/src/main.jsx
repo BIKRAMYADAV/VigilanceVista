@@ -9,6 +9,7 @@ import Login from './pages/Login.jsx';
 import Signup from './pages/Signup.jsx';
 import Zone from './pages/Zone.jsx';
 import Footer from './components/Footer.jsx';
+import Community from './pages/Community.jsx';
 
 
 
@@ -22,6 +23,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/login' element={<Login/>}></Route>
       <Route path='/signup' element={<Signup/>}></Route>
       <Route path='/zone' element={<Zone/>}></Route>
+      <Route path = '/community' element = {<Community/>}></Route>
+
     </Routes>
     <Footer/>
   </BrowserRouter>
