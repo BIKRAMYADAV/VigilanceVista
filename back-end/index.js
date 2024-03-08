@@ -7,7 +7,13 @@ const userAuthModel = require('./models/User.js')
 const CommunityModel = require('./models/Community.js')
 app.use(express.json())
 
-app.use(cors())
+app.use(cors(
+    {
+        origin : ["https://vigilance-vista-server.vercel.app/"],
+        methods : ["POST", "GET"],
+        credentials : true
+    }
+))
 
 const func = async () => {
 await mongoose.connect('mongodb+srv://admin:admin@blog-website.utuektf.mongodb.net/?retryWrites=true&w=majority')
