@@ -4,6 +4,7 @@ const PORT = 3000
 const mongoose = require('mongoose')
 const app = express()
 const userAuthModel = require('./models/User.js')
+const CommunityModel = require('./models/Community.js')
 app.use(express.json())
 
 app.use(cors())
@@ -43,3 +44,22 @@ app.post('/register', (req, res) => {
 })
   .catch(err => console.log(err))
 })
+
+//get data
+app.get('/community', async (req, res) => {
+    try{
+        const data = await CommunityModel.find()
+        res.json(data)
+    }
+    catch(error) {
+        console.log(error);
+    }
+})
+
+
+app.post('/community', async (req, res) => {
+    let post = new CommunityModel(req.body);
+     let result = await post.save()
+     res.send(result)
+
+ })

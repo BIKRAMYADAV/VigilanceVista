@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import BotPressChat from '../components/Bot';
+
 
 
 export default function Home(){
@@ -54,7 +54,9 @@ export default function Home(){
   }, []);
 
   const handleSearch = (event) => {
-    setSearchDistrict(event.target.value);
+    let dist = event.target.value
+    dist = dist.toUpperCase()
+    setSearchDistrict(dist);
   };
 
   const handleSearchSubmit = () => {
@@ -66,12 +68,13 @@ export default function Home(){
   
   return(
     <>
-    <section class="text-gray-400 bg-gray-900 body-font h-full">
-    <div class="container mx-auto flex flex-col w-full py-20 justify-center items-center">
+    <div className='h-full'>
+    <section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container mx-auto flex flex-col w-full py-24 sm:py-8 justify-center items-center">
       
       <div class="w-full md:w-2/3 flex flex-col mb-16 items-center text-center">
-        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white"> SafeZone Sentinel</h1>
-        <p class="mb-8 leading-relaxed">Access CrimeWatch anytime, anywhere, with our user-friendly design. Whether you're at home, at work, or on the go, stay connected and informed about the safety of your surroundings.</p>
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white"> VIGILANCE VISTA </h1>
+        <p class="mb-8 leading-relaxed">"Discover your neighborhood like never before with VigilanceVista! Simply input your location and unlock a comprehensive view of crime statistics. Navigate your surroundings with confidence, empowering you to stay vigilant. Based upon real-police data to keep you informed and aware. Join us in creating safer communities one click at a time. Explore, engage, and stay safe!"</p>
         <div class="flex w-full justify-center items-end">
           <div class="relative mr-4 lg:w-full xl:w-1/2 w-2/4 md:w-full text-left">
             <label for="hero-field" class="leading-7 text-sm text-gray-400">eg. "Search - BHUBANESWAR" </label>
@@ -91,7 +94,7 @@ export default function Home(){
 
 
   <section class="text-gray-400 bg-gray-900 body-font">
-    <div class="container px-5 py-2 mx-auto">
+    <div class="container px-5 py-16 mx-auto">
       <div class="flex flex-wrap -m-4 text-center">
       {districtInfo && (
         <div className='font-mono flex flex-wrap flex-col space-x-6 space-y-2 text-xl text-center' style={styles.districtInfo}>
@@ -124,7 +127,7 @@ export default function Home(){
     </div>
 
   </section>
-  <BotPressChat/>
+  </div>
   </>
   )
 

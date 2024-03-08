@@ -95,7 +95,7 @@
       "SAFETY_RATING": "5"
     },
     {
-      "DISTRICT": "BOLANGIR",
+      "DISTRICT": "BALANGIR",
       "MURDER": "413",
       "ATTEMPT_TO_MURDER": "734",
       "RAPE": "453",
@@ -361,7 +361,7 @@
       "SAFETY_RATING": "4"
     },
     {
-      "DISTRICT": "KHURDA",
+      "DISTRICT": "KHORDHA",
       "MURDER": "516",
       "ATTEMPT_TO_MURDER": "634",
       "RAPE": "535",
@@ -399,7 +399,7 @@
       "SAFETY_RATING": "6"
     },
     {
-      "DISTRICT": "MALKANGIR",
+      "DISTRICT": "MALKANGIRI",
       "MURDER": "461",
       "ATTEMPT_TO_MURDER": "341",
       "RAPE": "167",
@@ -456,7 +456,7 @@
       "SAFETY_RATING": "8"
     },
     {
-      "DISTRICT": "NOWRANGPUR",
+      "DISTRICT": "NABARANGPUR",
       "MURDER": "302",
       "ATTEMPT_TO_MURDER": "239",
       "RAPE": "337",
