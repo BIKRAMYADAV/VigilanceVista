@@ -47,7 +47,7 @@ export default function Home(){
 
   useEffect(() => {
     // Fetch the JSON data containing crime statistics
-    fetch('/data/data.json')
+    fetch('data/data.json')
       .then(response => response.json())
       .then(data => setCrimeData(data))
       .catch(error => console.error('Error fetching data:', error));
