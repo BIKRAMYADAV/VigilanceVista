@@ -47,7 +47,7 @@ export default function Home(){
 
   useEffect(() => {
     // Fetch the JSON data containing crime statistics
-    fetch('./data/data.json',  {
+    fetch('../data/data.json',  {
         method: 'GET',
         credentials: 'same-origin',
         headers:{
