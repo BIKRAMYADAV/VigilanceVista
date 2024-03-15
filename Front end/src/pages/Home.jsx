@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import data from '../data/data';
 
 
 export default function Home(){
@@ -46,11 +46,13 @@ export default function Home(){
   };
 
   useEffect(() => {
-    // Fetch the JSON data containing crime statistics
-    fetch('/data/data.json')
-      .then(response => response.json())
-      .then(data => setCrimeData(data))
-      .catch(error => console.error('Error fetching data:', error));
+
+    try {
+      setCrimeData(data);
+      console.log(`data loaded`);
+    }catch(e) {
+      console.log(e.message);
+    }
   }, []);
 
   const handleSearch = (event) => {

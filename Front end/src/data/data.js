@@ -1,4 +1,4 @@
-[
+const data = [
     {
       "DISTRICT": "ANGUL",
       "MURDER": "598",
@@ -684,3 +684,5 @@
       "SAFETY_RATING": "8"
     }
   ]
+
+  export default data
