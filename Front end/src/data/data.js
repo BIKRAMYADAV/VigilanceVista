@@ -97,7 +97,9 @@ const data = [
     {
         "DISTRICT": "BHUBANESWAR",
         "MURDER": "52",
+         "ATTEMPT_TO_MURDER": "734",
         "RAPE": "135",
+        "KIDNAPPING": "227",
       "DACOITY": "14",
       "ROBBERY": "587",
       "BURGLARY": "465",
@@ -111,7 +113,7 @@ const data = [
       "TOTAL_IPC_CRIMES": "21339",
       "SAFETY_RATING": "6"
         
-    }
+    },
     {
       "DISTRICT": "BALANGIR",
       "MURDER": "413",
