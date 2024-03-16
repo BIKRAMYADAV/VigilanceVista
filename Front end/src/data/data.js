@@ -97,21 +97,21 @@ const data = [
     {
         "DISTRICT": "BHUBANESWAR",
         "MURDER": "52",
-         "ATTEMPT_TO_MURDER": "734",
+        // "ATTEMPT_TO_MURDER": "734",
         "RAPE": "135",
-        "KIDNAPPING": "227",
+        //"KIDNAPPING": "227",
       "DACOITY": "14",
       "ROBBERY": "587",
       "BURGLARY": "465",
       "THEFT": "1943",
       "RIOTS": "56",
       "CHEATING": "1005",
-      "COUNTERFIETING": "11",
-      "DOWRY_DEATHS": "82",
-      "CRUELTY_BY_HUSBAND_OR_HIS_RELATIVES": "533",
-      "OTHER_IPC_CRIMES": "9981",
-      "TOTAL_IPC_CRIMES": "21339",
-      "SAFETY_RATING": "6"
+     // "COUNTERFIETING": "11",
+      //"DOWRY_DEATHS": "82",
+     // "CRUELTY_BY_HUSBAND_OR_HIS_RELATIVES": "533",
+      //"OTHER_IPC_CRIMES": "9981",
+     // "TOTAL_IPC_CRIMES": "21339",
+      //"SAFETY_RATING": "6"
         
     },
     {
