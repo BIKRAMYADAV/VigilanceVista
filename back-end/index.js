@@ -9,7 +9,7 @@ app.use(express.json())
 
 app.use(cors(
     {
-        origin : ["https://vigilance-vista.vercel.app"],
+        origin : ["https://vigilance-vista-client.vercel.app/"],
         methods : ["POST", "GET"],
         credentials : true
     }
