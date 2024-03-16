@@ -14,7 +14,7 @@ export default function Community(){
  
    const fetchData = async () => {
      try {
-         const response = await fetch('https://vigilance-vista-server.vercel.app/community')
+         const response = await fetch('https://vigilance-vista.vercel.app/community')
          const jsonData = await response.json()
          setData(jsonData);
      }
@@ -30,7 +30,7 @@ export default function Community(){
   const collectData = async (e) => {
     e.preventDefault();
    
-   let result = await fetch('https://vigilance-vista-server.vercel.app/community', {
+   let result = await fetch('https://vigilance-vista.vercel.app/community', {
     method : 'post',
     body : JSON.stringify({name, message}),
     headers : {
