@@ -79,7 +79,7 @@ export default function Home(){
         <p class="mb-8 leading-relaxed">"Discover your neighborhood like never before with VigilanceVista! Simply input your location and unlock a comprehensive view of crime statistics. Navigate your surroundings with confidence, empowering you to stay vigilant. Based upon real-police data to keep you informed and aware. Join us in creating safer communities one click at a time. Explore, engage, and stay safe!"</p>
         <div class="flex w-full justify-center items-end">
           <div class="relative mr-4 lg:w-full xl:w-1/2 w-2/4 md:w-full text-left">
-            <label for="hero-field" class="leading-7 text-sm text-gray-400">eg. "Search - BHUBANESWAR" </label>
+            <label for="hero-field" class="leading-7 text-sm text-gray-400">eg. "Search - BALANGIR" </label>
             <input type="text"  
         value={searchDistrict} 
         onChange={handleSearch}  id="hero-field" name="hero-field" class="w-full bg-gray-800 rounded border bg-opacity-40 border-gray-700 focus:ring-2 focus:ring-blue-900 focus:bg-transparent focus:border-blue-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
